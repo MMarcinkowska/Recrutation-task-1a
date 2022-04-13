@@ -4,7 +4,6 @@
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
 
 			AnimalAction animals = new AnimalAction();
 			

@@ -2,16 +2,16 @@
 {
 	internal class CreateSomeAnimals
 	{
-		public static Animal CreateAnimal(AnimalType AnimalType)
+		public static Animal CreateAnimal(AnimalType animalType)
 		{
-			switch (AnimalType)
+			switch (animalType)
 			{
 				case AnimalType.COW:
 					return new Cow() { Type = AnimalType.COW };
 				case AnimalType.SHEEP:
 					return new Sheep() { Type = AnimalType.SHEEP };
 				default:
-					throw new ArgumentNullException(nameof(AnimalType));
+					throw new ArgumentNullException(nameof(animalType));
 			}
 		}
 	}
